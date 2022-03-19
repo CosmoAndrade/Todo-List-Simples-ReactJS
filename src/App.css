@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+ text-align: center;
+  align-items: center;
+}
+
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+ul li {
+  margin-left: 15px;
+  list-style: none;
+  color: white;
+  margin: 10px;
+
+}
+
+button{
+  padding: 7px 35px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 5px 25px;
+}
