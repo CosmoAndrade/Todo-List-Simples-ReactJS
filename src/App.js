@@ -31,21 +31,41 @@ function App() {
     }
   }
 
+  const deleteTodo = (index) => {
+      let newList = itemsList
+      newList.splice(index,1)
+      setItemsList([...newList])
+  }
+
   return (
     <div className="App" >
+
+
+     
+
+
 
       <form onSubmit={handleAddItemToList}>
         <h1>ToDo</h1>
 
         <input type="text" onChange={(event) => handleChangeInput(event)} value={task} />
         <button type="submit">Add</button>
+        {/* <button onClick={ () => deleteTodo ()}>Delete</button> */}
         
        
       </form>
 
       {itemsList.map((item, index) => (
-        <div key={index} >{item}</div>
+        <div
+         key={index} >{item} &nbsp;
+           <button   onClick={ () => deleteTodo ()}>Delete</button>
+         </div>
+      
       ))}
+
+     
+
+      
 
 
       </div>

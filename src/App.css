@@ -36,6 +36,7 @@ button{
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 15px;
+  
 }
 
 form {
@@ -46,3 +47,4 @@ form {
 input{
   padding: 5px 25px;
 }
+
